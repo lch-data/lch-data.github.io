@@ -53,7 +53,7 @@ html { scroll-behavior: smooth; }
 </nav>
 
 <!-- 내용 래퍼 -->
-<div class="content-with-nav">
+<div class="content-with-nav" markdown="1">
 
 ![프로필 사진](assets/img/profile.jpg){: style="width:180px; border-radius:50%; margin-top:10px;"}
 

@@ -19,6 +19,52 @@ layout: default
 <!-- 내용 래퍼: 왼쪽 내비 공간만큼 여백 -->
 <div class="content-with-nav">
 
+<style>
+/* 부드러운 스크롤 */
+html { scroll-behavior: smooth; }
+
+/* 사이드 내비 */
+.side-nav{
+  position: fixed;
+  top: 120px;          /* 헤더/타이틀 아래로 내리기 */
+  left: 16px;
+  width: 210px;
+  padding: 12px 10px;
+  border-radius: 12px;
+  background: #f6f8fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.side-nav .side-title{
+  font-weight: 700;
+  margin: 2px 0 8px;
+  color: #0366d6;
+}
+.side-nav a{
+  display: block;
+  margin: 6px 0;
+  text-decoration: none;
+  color: #24292e;
+  font-size: 14px;
+}
+.side-nav a:hover{ text-decoration: underline; }
+
+/* 본문은 왼쪽에 내비 폭만큼 여백 */
+.content-with-nav{
+  margin-left: 240px;   /* = 사이드바 너비(210) + 여백(30) */
+}
+
+/* 모바일/좁은 화면에서는 위쪽에 노출하고 고정 해제 */
+@media (max-width: 992px){
+  .side-nav{
+    position: static;
+    width: auto;
+    margin: 0 0 12px;
+  }
+  .content-with-nav{ margin-left: 0; }
+}
+</style>
+
+
 ![프로필 사진](assets/img/profile.jpg){: style="width:180px; border-radius:50%; margin-top:10px;"}
 
 # 이치현 **운영관리 전문가 포트폴리오**
@@ -38,7 +84,8 @@ layout: default
 **주식회사 포켓잭스 (스머프매직포레스트) / 운영관리팀장 (2022.08 ~ 현재)**  
 - 직영점 운영총괄: 강남점, 홍대점 운영관리  
 - 가맹점 관리: 인테리어 참여, 게임설비 직접설치, 가맹점 오픈교육, 추후 QSC점검  
-- 성과: 직영점 1곳 + 가맹점 4곳 1달여만에 확장 / 3년동안 직영점 제로 안티리뷰 달성 / 트립어드바이저 top 5 평점4.9 (즐길거리/게임카테고리)
+- 성과: 직영점 1곳 + 가맹점 4곳 1달여만에 확장 / 3년동안 직영점 제로 안티리뷰 달성 / 트립어드바이저 top 5 평점5.0 (즐길거리/게임카테고리1위)
+- [트립어드바이저 링크](https://www.tripadvisor.co.kr/Attraction_Review-g294197-d25234653-Reviews-Smurf_Magic_Forest-Seoul.html)
 
 ---
 
@@ -103,3 +150,5 @@ layout: default
 - 이메일: mystory1992@naver.com  
 - GitHub: https://github.com/lch-data  
 - 연락처: 010 9887 8499
+
+</div>

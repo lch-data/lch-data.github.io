@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
----
-layout: default
----
+
 
 <!-- 왼쪽 고정 사이드 내비 -->
 <nav class="side-nav">

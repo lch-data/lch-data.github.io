@@ -1,6 +1,23 @@
 ---
 layout: default
 ---
+---
+layout: default
+---
+
+<!-- 왼쪽 고정 사이드 내비 -->
+<nav class="side-nav">
+  <div class="side-title">포트폴리오</div>
+  <a href="#about">소개</a>
+  <a href="#experience">경력 요약</a>
+  <a href="#cases">위기극복사례</a>
+  <a href="#skills">핵심역량</a>
+  <a href="#learning">학습/자격</a>
+  <a href="#contact">연락처</a>
+</nav>
+
+<!-- 내용 래퍼: 왼쪽 내비 공간만큼 여백 -->
+<div class="content-with-nav">
 
 ![프로필 사진](assets/img/profile.jpg){: style="width:180px; border-radius:50%; margin-top:10px;"}
 
@@ -11,12 +28,12 @@ layout: default
 
 ---
 
-## 소개 (About)
+## 소개 (About) {#about}
 - 다양한 형태의 매장 운영 경험을 바탕으로 고객 응대, 직원 관리, 콘텐츠 운영, 손익 관리까지 현장의 흐름을 체계적으로 익혀온 운영 전문가입니다.
 
 ---
 
-## 경력 요약 (Experience)
+## 경력 요약 (Experience) {#experience}
 
 **주식회사 포켓잭스 (스머프매직포레스트) / 운영관리팀장 (2022.08 ~ 현재)**  
 - 직영점 운영총괄: 강남점, 홍대점 운영관리  
@@ -53,7 +70,7 @@ layout: default
 
 ---
 
-## 위기극복사례 (Case Studies)
+## 위기극복사례 (Case Studies) {#cases}
 **1) 문제상황**  
 - 문제: 2023년 여름, 약 한 달 안에 5개 신규 지점(하남, 동탄, 송도, 안양, 홍대) 동시 오픈. 한정된 인원과 생소한 설비로 인한 어려움  
 - 액션: 2주간 사전교육으로 직원에게 설치전문교육진행, 직원과 두팀으로 나뉘어져 일용현장근무자 분들과 밀어내기식 설치 진행 후 가맹점 운영 사전 교육까지 진행
@@ -66,7 +83,7 @@ layout: default
 
 ---
 
-## 핵심역량
+## 핵심역량 {#skills}
 - **전략적 운영관리**: 당사의 브랜드 파악 후 고객층 분석 기반 운영 전략 수립, 판매 기획, 손익 관리를 통한 매출 극대화
 - **팀 리더쉽**: 30명 전후의 인력채용, 운영 관리의 성공적인 경
 - **현장문제해**: 긴급상황 대처능력(여러 설비의 유지보수와 순간적인 우선순위의 구분을 통한 현명한 위기대처)
@@ -75,13 +92,14 @@ layout: default
 
 ---
 
-## 학습/자격 (Learning)
+## 학습/자격 (Learning) {#learning}
 - 서울사이버대학교 인공지능학과 (재학)
 - CS Leaders(관리사) (2021.04)
 - 1종 보통 운전면허 (2019.02)
 
 ---
 
-## 연락처 (Contact)
+## 연락처 (Contact) {#contact}
 - 이메일: mystory1992@naver.com  
 - GitHub: https://github.com/lch-data  
+- 연락처: 010 9887 8499

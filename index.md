@@ -2,10 +2,12 @@
 layout: default
 ---
 
-# 이치현 **운영관리 전문가 포트폴리오**  
+![프로필 사진](assets/img/profile.jpg){: style="width:180px; border-radius:50%; margin-top:10px;"}
+
+# 이치현 **운영관리 전문가 포트폴리오**
 스머프매직포레스트 운영관리팀장  
 <small>연락처: <a href="mailto:mystory1992@naver.com">mystory1992@naver.com</a> · 
-<a href="https://github.com/lch-data" target="_blank">GitHub</a> 
+<a href="https://github.com/lch-data" target="_blank">GitHub</a></small>
 
 ---
 

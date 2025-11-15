@@ -117,10 +117,161 @@ html { scroll-behavior: smooth; }
 ---
 
 ## 위기극복사례 (Case Studies) {#cases}
-**1) 문제상황**  
-- 문제: 2023년 여름, 약 한 달 안에 5개 신규 지점(하남, 동탄, 송도, 안양, 홍대) 동시 오픈. 한정된 인원과 생소한 설비로 인한 어려움  
-- 액션: 2주간 사전교육으로 직원에게 설치전문교육진행, 직원과 두팀으로 나뉘어져 일용현장근무자 분들과 밀어내기식 설치 진행 후 가맹점 운영 사전 교육까지 진행  
-- 성과: 불가능 할거라 여겼던 예정에 맞춘 전 지점 오픈 완료, 초기 고객 반응과 운영 안정성에서 긍정적 평가  
+
+<style>
+.case-chart-wrapper {
+  margin: 30px 0;
+  padding: 24px 20px;
+  background: #f6f8fa;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+.case-chart-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #24292e;
+}
+
+.case-chart {
+  display: grid;
+  grid-template-columns: 1.3fr 0.4fr 1.6fr;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.case-left h4,
+.case-right h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #24292e;
+}
+
+.case-left p,
+.case-right p {
+  margin: 0 0 16px;
+  line-height: 1.5;
+  color: #4b545f;
+}
+
+/* 가운데 단계(1~3 원) */
+.case-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 8px 0;
+}
+
+.case-steps::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  width: 2px;
+  background: #d0d7de;
+}
+
+.case-step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0366d6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 12px 0;
+  z-index: 1;
+  font-size: 14px;
+}
+
+/* 모바일 대응 */
+@media (max-width: 900px) {
+  .case-chart {
+    grid-template-columns: 1fr;
+  }
+
+  .case-steps {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px 0 16px;
+  }
+
+  .case-steps::before {
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+  }
+
+  .case-step {
+    margin: 0 6px;
+  }
+}
+</style>
+
+<div class="case-chart-wrapper">
+  <h3 class="case-chart-title">위기 극복 경험: 5개 지점 동시 오픈</h3>
+
+  <div class="case-chart">
+    <!-- 왼쪽 열 -->
+    <div class="case-left">
+      <h4>문제 상황</h4>
+      <p>
+        2023년 여름, 약 한 달 안에 5개 신규 지점(하남, 동탄, 송도, 안양, 홍대)을
+        동시에 오픈해야 하는 상황. 한정된 인원과 생소한 설비로 인해 오픈 준비에
+        큰 부담이 있었습니다.
+      </p>
+
+      <h4>인력 교육</h4>
+      <p>
+        2주간 사전 교육 프로그램을 운영하여 설치·운영 담당자를 선발하고,
+        오픈 전 고객 응대 시뮬레이션, 안전·서비스 매뉴얼 교육을 집중적으로 진행했습니다.
+      </p>
+
+      <h4>성공적 결과</h4>
+      <p>
+        예정된 일정 내 전 지점 오픈 완료, 초기 고객 반응과 운영 안정성에서 긍정적인
+        평가를 받았고, 재방문 의사를 밝힌 고객이 다수 발생했습니다.
+      </p>
+    </div>
+
+    <!-- 가운데 단계 번호 -->
+    <div class="case-steps" aria-hidden="true">
+      <div class="case-step">1</div>
+      <div class="case-step">2</div>
+      <div class="case-step">3</div>
+    </div>
+
+    <!-- 오른쪽 열 -->
+    <div class="case-right">
+      <h4>전략 수립</h4>
+      <p>
+        각 매장의 도면과 설비 정보를 사전에 분석하여 설치 동선을 정리하고,
+        본사와 현장 간 역할 분담·커뮤니케이션 체계를 구축했습니다.
+      </p>
+
+      <h4>현장 대응</h4>
+      <p>
+        장비 오류 발생 시 즉시 현장 담당자를 투입하고, 본사와 실시간 연락을 통해
+        문제를 신속하게 해결하여 오픈 일정 지연을 최소화했습니다.
+      </p>
+
+      <h4>지속 개선</h4>
+      <p>
+        오픈 이후에는 매출·회전율·클레임 데이터를 분석해 인력 배치, 예약 동선,
+        설비 점검 체크리스트를 표준화하여 이후 신규 지점 오픈 프로젝트에
+        레퍼런스로 활용하고 있습니다.
+      </p>
+    </div>
+  </div>
+</div>
+
 
 **2) 노쇼(무단취소) 감소 프로젝트**  
 - 문제: 외국인 예약 노쇼로 인한 수익 손실  

@@ -76,6 +76,16 @@ html { scroll-behavior: smooth; }
 - 가맹점 관리: 인테리어 참여, 게임설비 직접설치, 가맹점 오픈교육, 추후 QSC점검  
 - 성과: 직영점 1곳 + 가맹점 4곳 1달여만에 확장 / 3년동안 직영점 제로 안티리뷰 달성 / 트립어드바이저 top 5 평점5.0 (즐길거리/게임카테고리 1위)  
 - [트립어드바이저 바로가기](https://www.tripadvisor.co.kr/Attraction_Review-g294197-d25234653-Reviews-Smurf_Magic_Forest-Seoul.html)
+- <!-- 트립어드바이저 이미지 박스 -->
+<p align="center" style="margin-top:15px;">
+  <a href="https://www.tripadvisor.co.kr/Attraction_Review-g294197-d25234653-Reviews-Smurf_Magic_Forest-Seoul.html" target="_blank">
+    <img src="assets/img/trip_img.jpg" 
+         alt="스머프 매직 포레스트 트립어드바이저" 
+         style="width:85%; max-width:700px; border-radius:12px; 
+                box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+  </a>
+</p>
+
 
 ---
 

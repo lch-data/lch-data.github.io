@@ -1,4 +1,4 @@
-# Cayman 포트폴리오
+# Cayman테마 기반의 포트폴리오
 
 GitHub Pages용 Cayman 테마 기반 포트폴리오
 
@@ -9,4 +9,4 @@ GitHub Pages용 Cayman 테마 기반 포트폴리오
 ### 업로드 방법
 1. `lch-data.github.io` 저장소에 업로드 >
 2. Settings → Pages → Branch: main / Folder: /(root) (셋팅확인)
-3. https://lch-data.github.io 접속 후 스타일 적용 확인하기
+3. https://lch-data.github.io 포트폴리오 링크

@@ -292,21 +292,22 @@
     /* 경력 요약 카드에 흐릿 배경 */
     #experience.section-card {
       background: rgba(15,23,42,0.96);
-    }
-    #experience.section-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(120deg, rgba(15,23,42,0.80), rgba(15,23,42,0.92)),
-        url("assets/img/huga_img.jpg") center left/60% auto no-repeat,
-        url("assets/img/escape_img.jpg") center right/60% auto no-repeat;
-      filter: blur(6px);
-      transform: scale(1.05);
-      opacity: 0.45;
-      z-index: 0;
-      pointer-events: none;
-    }
+}
+#experience.section-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(15,23,42,0.80), rgba(15,23,42,0.92)),
+    url("assets/img/huga_img.jpg") center left/60% auto no-repeat,
+    url("assets/img/escape_img.jpg") center right/60% auto no-repeat;
+  filter: blur(6px);
+  transform: scale(1.05);
+  opacity: 0.45;
+  z-index: 0;
+  pointer-events: none;
+}
+
 
     /* 리스트 스타일 */
     .experience-item + .experience-item {

@@ -289,25 +289,46 @@
       color: #e5e7eb;
     }
 
-    /* 경력 요약 카드에 흐릿 배경 */
+    /* 경력 요약 카드 배경 기본 및 개별 카드 배경 */
     #experience.section-card {
       background: rgba(15,23,42,0.96);
-}
-#experience.section-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(120deg, rgba(15,23,42,0.80), rgba(15,23,42,0.92)),
-    url("assets/img/huga_img.jpg") center left/60% auto no-repeat,
-    url("assets/img/escape_img.jpg") center right/60% auto no-repeat;
-  filter: blur(6px);
-  transform: scale(1.05);
-  opacity: 0.45;
-  z-index: 0;
-  pointer-events: none;
-}
+    }
 
+    .experience-item {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .experience-item > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .experience-item--escape::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(15,23,42,0.88), rgba(15,23,42,0.95)),
+        url("assets/img/escape_img.jpg") center right/55% auto no-repeat;
+      opacity: 0.32;
+      filter: blur(3px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .experience-item--huga::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(270deg, rgba(15,23,42,0.88), rgba(15,23,42,0.95)),
+        url("assets/img/huga_img.jpg") center left/55% auto no-repeat;
+      opacity: 0.30;
+      filter: blur(3px);
+      z-index: 0;
+      pointer-events: none;
+    }
 
     /* 리스트 스타일 */
     .experience-item + .experience-item {
@@ -598,7 +619,7 @@
             </div>
           </div>
 
-          <div class="experience-item">
+          <div class="experience-item experience-item--escape">
             <div class="experience-role">삶넥스트 (서울이스케이프룸) · 강남2호점 매장 매니저</div>
             <div class="experience-meta">2019.01 ~ 2022.03</div>
             <div class="experience-body">
@@ -610,7 +631,7 @@
             </div>
           </div>
 
-          <div class="experience-item">
+          <div class="experience-item experience-item--huga">
             <div class="experience-role">huga</div>
             <div class="experience-meta">2017.05 ~ 2018.06</div>
             <div class="experience-body">

@@ -7,7 +7,7 @@
 
 ## 🔗 Portfolio URL
 
-- **GitHub Pages**: https://YOUR_USERNAME.github.io/YOUR_REPO_NAME  
+- **GitHub Pages**: [https://YOUR_USERNAME.github.io/YOUR_REPO_NAME ](https://lch-data.github.io/) 
   → 위 주소를 실제 본인 포트폴리오 URL로 수정해 주세요.
 
 ---

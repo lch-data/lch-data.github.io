@@ -90,12 +90,16 @@
       font-size: 14px;
     }
 
-    .nav-links a {
+   .nav-links a {
       padding: 6px 10px;
       border-radius: 12px;
       color: var(--text-soft);
       position: relative;
+      background: rgba(15,23,42,0.35);       /* 살짝만 밝은 배경 */
+      border: 1px solid rgba(148,163,184,0.25);
+      transition: background 0.18s, color 0.18s, border-color 0.18s;
     }
+
 
     .nav-links a::before {
       content: "";
@@ -115,9 +119,11 @@
     }
 
     .nav-links a:hover {
-      background: rgba(15,116,79,0.5);
+      background: rgba(34,197,94,0.16);              /* 히어로/섹션 카드랑 톤 맞춘 연두빛 */
+      border-color: rgba(52,211,153,0.85);
       color: #e5fef5;
     }
+
 
     .nav-links a:hover::before {
       background: var(--accent);

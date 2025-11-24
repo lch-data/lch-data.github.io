@@ -52,11 +52,17 @@
       width: 260px;
       padding: 22px 20px 24px;
       border-radius: var(--radius-xl);
-      background: rgba(15,23,42,0.9);
+      background: linear-gradient(
+        180deg,
+        rgba(59,130,246,0.25) 0%,      /* 상단 파랑 */
+        rgba(15,23,42,0.85) 45%,       /* 중간 네이비 */
+        rgba(34,197,94,0.18) 100%      /* 하단 초록빛 */
+      );
       border: 1px solid rgba(148,163,184,0.25);
       backdrop-filter: blur(18px);
       box-shadow: var(--shadow-soft);
-    }
+}
+
 
     .brand-title {
       font-size: 18px;
@@ -95,10 +101,16 @@
       border-radius: 12px;
       color: var(--text-soft);
       position: relative;
-      background: rgba(15,23,42,0.35);       /* 살짝만 밝은 배경 */
-      border: 1px solid rgba(148,163,184,0.25);
+      background: linear-gradient(
+        135deg,
+        rgba(59,130,246,0.22),
+        rgba(15,23,42,0.6) 60%,
+        rgba(34,197,94,0.15)
+      );
+      border: 1px solid rgba(148,163,184,0.28);
       transition: background 0.18s, color 0.18s, border-color 0.18s;
-    }
+}
+
 
 
     .nav-links a::before {
@@ -119,10 +131,15 @@
     }
 
     .nav-links a:hover {
-      background: rgba(34,197,94,0.16);              /* 히어로/섹션 카드랑 톤 맞춘 연두빛 */
-      border-color: rgba(52,211,153,0.85);
+      background: linear-gradient(
+        135deg,
+        rgba(59,130,246,0.28),
+        rgba(34,197,94,0.25)
+      );
+      border-color: rgba(52,211,153,0.9);
       color: #e5fef5;
-    }
+}
+
 
 
     .nav-links a:hover::before {

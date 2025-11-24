@@ -294,7 +294,7 @@
       background: rgba(15,23,42,0.96);
     }
 
-    /* 경력 요약: 텍스트 + 이미지 2열 배치 */
+    /* 경력 요약: 텍스트 + (선택적) 이미지/영상 2열 배치 */
     .experience-item {
       display: flex;
       justify-content: space-between;
@@ -304,17 +304,21 @@
     }
 
     .experience-text {
-      width: 60%;
+      flex: 1 1 100%;
     }
 
-    .experience-img {
-      width: 32%;
+    .experience-item--has-media .experience-text {
+      flex-basis: 60%;
+    }
+
+    .experience-media {
+      flex: 0 0 32%;
       border-radius: 14px;
       overflow: hidden;
       box-shadow: 0 8px 20px rgba(0,0,0,0.45);
     }
 
-    .experience-img img {
+    .experience-media img {
       width: 100%;
       height: auto;
       display: block;
@@ -462,7 +466,7 @@
 
     /* 유튜브 영상 래퍼 */
     .video-wrapper {
-      margin-top: 8px;
+      width: 100%;
       aspect-ratio: 16/9;
       border-radius: 14px;
       overflow: hidden;
@@ -472,6 +476,7 @@
       width: 100%;
       height: 100%;
       border: 0;
+      display: block;
     }
 
     /* 반응형 */
@@ -502,8 +507,11 @@
       .experience-item {
         flex-direction: column;
       }
-      .experience-text,
-      .experience-img {
+      .experience-text {
+        flex-basis: auto;
+      }
+      .experience-media {
+        flex-basis: auto;
         width: 100%;
       }
     }
@@ -593,7 +601,8 @@
         </div>
         <div class="section-body">
 
-          <div class="experience-item">
+          <!-- 포켓잭스: 텍스트 + 오른쪽 영상 -->
+          <div class="experience-item experience-item--has-media">
             <div class="experience-text">
               <div class="experience-role">주식회사 포켓잭스 (스머프매직포레스트) · 운영관리팀장</div>
               <div class="experience-meta">2022.08 ~ 현재</div>
@@ -605,56 +614,59 @@
                   <li>
                     트립어드바이저 즐길거리/게임 카테고리 1위, 평점 ★5.0 유지
                     (<a href="https://www.tripadvisor.co.kr/Attraction_Review-g294197-d25234653-Reviews-Smurf_Magic_Forest-Seoul.html" target="_blank" class="trip-link">홈페이지 클릭</a>)
-                    <div class="video-wrapper">
-                      <iframe
-                        src="https://www.youtube.com/embed/bZOGVH_A3uA"
-                        title="Smurf Magic Forest 소개 영상"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                      </iframe>
-                    </div>
                   </li>
                 </ul>
               </div>
             </div>
+            <div class="experience-media">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/bZOGVH_A3uA"
+                  title="Smurf Magic Forest 소개 영상"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
           </div>
 
-          <div class="experience-item">
+          <!-- 삶넥스트: 텍스트 + 오른쪽 이미지 -->
+          <div class="experience-item experience-item--has-media">
             <div class="experience-text">
               <div class="experience-role">삶넥스트 (서울이스케이프룸) · 강남2호점 매장 매니저</div>
               <div class="experience-meta">2019.01 ~ 2022.03</div>
               <div class="experience-body">
                 <ul>
                   <li>국내 최초 방탈출 카페 강남 2호점 총괄 운영, 평균 20~30명 인력 관리</li>
-                  <li>기기 유지보수 및 환불정책, 응대 메뉴얼 개편 후 서비스 평가 상향</li>
+                  <li>기기 유지보수 및 긴급 상황 대응 체계 구축, 서비스 품질 및 재방문율 향상</li>
                   <li>당시 트립어드바이저 즐길거리/게임 카테고리 서울 1위 달성</li>
                 </ul>
               </div>
             </div>
-
-            <div class="experience-img">
+            <div class="experience-media">
               <img src="assets/img/escape_img.jpg" alt="서울이스케이프룸 이미지">
             </div>
           </div>
 
-          <div class="experience-item">
+          <!-- huga: 텍스트 + 오른쪽 이미지 -->
+          <div class="experience-item experience-item--has-media">
             <div class="experience-text">
               <div class="experience-role">huga</div>
               <div class="experience-meta">2017.05 ~ 2018.06</div>
               <div class="experience-body">
                 <ul>
                   <li>200평 규모 브런치 카페 오픈 준비(인테리어/동선/운영 프로세스 설계)</li>
-                  <li>민트초코 비엔나, 민트초코 빙수 등 브랜드 컨셉에 맞는 시그니처 메뉴 개발</li>
+                  <li>민트초코 비엔나, 민트초코 빙수 등 시그니처 메뉴 개발</li>
                   <li>스트롱홀드 S7 본사 교육 이수 후 매장 시그니처 원두 로스팅 레시피 확립</li>
                 </ul>
               </div>
             </div>
-
-            <div class="experience-img">
+            <div class="experience-media">
               <img src="assets/img/huga_img.jpg" alt="huga 카페 이미지">
             </div>
           </div>
 
+          <!-- 솔앤로빈: 텍스트만 (이미지 없음) -->
           <div class="experience-item">
             <div class="experience-text">
               <div class="experience-role">솔앤로빈</div>
@@ -795,7 +807,7 @@
             <li><strong>팀 리더십</strong> — 20~30명 규모 인력 채용·스케줄링·교육 경험, 다년간 이슈 없는 안정적인 조직 운영</li>
             <li><strong>현장 문제 해결</strong> — 설비 장애·안전 이슈 발생 시 우선순위 판단과 빠른 복구</li>
             <li><strong>브랜드 구현</strong> — 브랜드 콘셉트에 맞는 서비스 전략과 콘텐츠 구현</li>
-            <li><strong>데이터 기반 인사이트</strong> — 데이터와 현장을 고려한 운영 개선 아이디어 도출</li>
+            <li><strong>데이터 기반 인사이트</strong> — 데이터를 기반한 운영 개선 아이디어 도출</li>
           </ul>
         </div>
       </section>
